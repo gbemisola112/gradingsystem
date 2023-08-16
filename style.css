@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    background: linear-gradient(to top, #a32860, #473692);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 5in;
+   
+    /* opacity: 0.5; */
+}
+
+#back{
+    margin-left: 500px;
+    margin-top: 200px;
+    height: 3in;
+    width: 400px;
+     backdrop-filter: blur(25px);
+    /* border: 3px solid rgb(184, 162, 162);
+    border-radius: 100px; */
+    
+    
+ /* From https://css.glass */
+background: rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+#grade{
+    font-size: 40px;
+    color: black;
+    margin-left: 80px;
+    padding-top: 50px;
+
+}
+#check{
+    height: 50px;
+    margin-left: 50px;
+    width: 280px;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-radius:10px ;
+    background-color: white;
+    box-shadow: 1px solid rgb(255, 255, 255);
+    outline: none;
+    
+}
+#btn{
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 51px;
+    margin-left: -0.5in;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#text{
+    border: 1px solid white;
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+div{
+    width: 120px;
+    height: 130px;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    place-content: center;
+    transition-duration:0.5s; 
+    transition-delay:0.5s;
+    transition-timing-function:ease-in-out;
+}
+
+div:hover{
+    width: 100px;
+    color: #ff0374;
+}
+.box-1{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+    /* transform: translate(50%, 0%); */
+    /* transform: rotate3d(5,3,0,30deg); */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation-name: box-1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s ;
+    animation-duration: 15s;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box-1{
+    from{
+        bottom: 0px;}
+    to{   
+        bottom: 500px;
+    }
+    0%{
+        width: 120px;
+        height: 130px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 60px;
+        height: 70px;
+    }
+}
+/* .box-1:hover{
+    background-color: green; */
+    
+
+div:nth-child(2){
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+}
+div:last-child{
+   background-color: limegreen;
+}
+.box-2{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-left: 250px;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation-name: box-2;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s ;
+    animation-duration: 12s;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box-2{
+    from{
+        bottom: 40px;}
+    to{   
+        bottom: 500px;
+    }
+    0%{
+        width: 120px;
+        height: 130px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 60px;
+        height: 70px;
+    }
+}
+/* .box-1:hover{
+    background-color: green; */
+    
+
+div:nth-child(2){
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+}
+div:last-child{
+   background-color: limegreen;
+}
+.box-3{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-left: 450px;
+    position: absolute;
+    margin-bottom: -80px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation-name: box-3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s ;
+    animation-duration: 11s;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box-3{
+    from{
+        bottom: 20px;}
+    to{   
+        bottom: 600px;
+    }
+    0%{
+        width: 60px;
+        height: 70px;
+    }
+    50%{
+        width: 60px;
+        height: 70px
+    }
+    75%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 120px;
+        height: 130px;
+    }
+}
+/* .box-1:hover{
+    background-color: green; */
+    
+
+div:nth-child(2){
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+}
+div:last-child{
+   background-color: limegreen;
+}
+.box-4{
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-left: 650px;
+      position: absolute;
+      margin-bottom: -80px;
+      height: 90px;
+      width: 100px;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      animation-name: box-4;
+      animation-timing-function: ease-in-out;
+      animation-delay: 2s ;
+      animation-duration: 13s;
+      animation-fill-mode:forwards ;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes box-4{
+      from{
+          bottom: 20px;}
+      to{   
+          bottom: 600px;
+      }
+  }
+  
+  div:nth-child(2){
+     /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  div:last-child{
+     background-color: limegreen;
+  }
+.box-5{
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-left: 850px;
+      position: absolute;
+      margin-bottom: -80px;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      animation-name: box-5;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s ;
+      animation-duration: 15s;
+      animation-fill-mode:forwards ;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes box-5{
+      from{
+          bottom: 5px;}
+      to{   
+          bottom: 600px;
+      }
+      0%{
+        width: 120px;
+        height: 130px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 60px;
+        height: 70px;
+    }
+  }
+  
+  div:nth-child(2){
+     /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  div:last-child{
+     background-color: limegreen;
+  }
+
+  .box-6{
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+    width: 80px;
+    height: 90px;
+      margin-left: 1050px;
+      position: absolute;
+      margin-bottom: -80px;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      animation-name: box-6;
+      animation-timing-function: ease-in-out;
+      animation-delay: 3s ;
+      animation-duration: 11s;
+      animation-fill-mode:forwards ;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes box-6{
+      from{
+          bottom: 20px;}
+      to{   
+          bottom: 600px;
+      }
+  }
+  .box-7{
+    /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+    width: 80px;
+    height: 90px;
+      margin-left: 1200px;
+      position: absolute;
+      margin-bottom: -80px;
+      bottom: 0;
+      left: 0;
+      animation-name: box-7;
+      animation-timing-function: ease-in-out;
+      animation-delay: 3s ;
+      animation-duration: 11s;
+      animation-fill-mode:forwards ;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes box-7{
+      from{
+          bottom: 20px;}
+      to{   
+          bottom: 600px;
+      }
+  }
+  /* .box-1:hover{
+      background-color: green; */
+      
+  
+  div:nth-child(2){
+     /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  div:last-child{
+     background-color: limegreen;
+  }
+@media screen and (max-width:482px) {
+    #back{
+        margin-left: 10px;
+        margin-top: 200px;
+        padding-left: -10px;
+        height: 3.5in;
+        width:350px;
+     /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    }
+    #grade{
+        font-size: 30px;
+        color: black;
+        margin-left: 50px;
+        padding-top: 20px;
+    
+    }
+    #check{
+        height: 50px;
+        margin-left: 30px;
+        width: 250px;
+        margin-top: 30px;
+        padding-left: 20px;
+        border-radius:10px ;
+        background-color: white;
+        box-shadow: 1px solid rgb(255, 255, 255);
+        outline: none;
+        
+    }
+    #btn{
+        background-color: green;
+        color: white;
+        width: 80px;
+        height: 51px;
+        margin-left: -0.6in;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #text{
+        border: 1px solid white;
+        background-color: white;
+        height: 50px;
+        width: 180px;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-left: 80px;
+        padding: 10px;
+        padding-left: 40px;
+        border-radius: 10px;
+    }
+    .box-4{
+        /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+          margin-left: 650px;
+          position: absolute;
+          margin-bottom: -80px;
+          height: 90px;
+          width: 100px;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          animation-name: box-4;
+          animation-timing-function: ease-in-out;
+          animation-delay: 2s ;
+          animation-duration: 13s;
+          animation-fill-mode:forwards ;
+          animation-iteration-count: infinite;
+      }
+      
+      @keyframes box-4{
+          from{
+              bottom: 20px;}
+          to{   
+              bottom: 600px;
+          }
+      }
+      
+      div:nth-child(2){
+         /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      div:last-child{
+         background-color: limegreen;
+      }
+
+      .box-5{
+          /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-left: 0.1in;
+            position: absolute;
+            margin-bottom: -80px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            animation-name: box-5;
+            animation-timing-function: ease-in-out;
+            animation-delay: 6s ;
+            animation-duration: 16s;
+            animation-fill-mode:forwards ;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes box-5{
+            from{
+                bottom: 5px;}
+            to{   
+                bottom: 600px;
+            }
+            0%{
+              width: 120px;
+              height: 130px;
+          }
+          50%{
+              width: 100px;
+              height: 100px;
+          }
+          100%{
+              width: 60px;
+              height: 70px;
+          }
+        }
+        
+        div:nth-child(2){
+           /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        div:last-child{
+           background-color: limegreen;
+        }
+      
+        .box-6{
+          /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+          width: 80px;
+          height: 90px;
+            margin-left: 1.5in;
+            position: absolute;
+            margin-bottom: -80px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            animation-name: box-6;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s ;
+            animation-duration: 11s;
+            animation-fill-mode:forwards ;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes box-6{
+            from{
+                bottom: 20px;}
+            to{   
+                bottom: 600px;
+            }
+        }
+        .box-7{
+          /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+          width: 80px;
+          height: 90px;
+            margin-left: 2.3px;
+            position: absolute;
+            margin-bottom: -80px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            animation-name: box-7;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s ;
+            animation-duration: 14s;
+            animation-fill-mode:forwards ;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes box-7{
+            from{
+                bottom: 20px;}
+            to{   
+                bottom: 600px;
+            }
+        }
+        /* .box-1:hover{
+            background-color: green; */
+            
+        
+        div:nth-child(2){
+           /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        div:last-child{
+           background-color: limegreen;
+}
+}

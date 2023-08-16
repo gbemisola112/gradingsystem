@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="back">
+        <marquee behavior="" direction="right">
+            <em>Welcome to official grading page</em>
+        </marquee>
+        
+        <h2 id="grade">Grading system</h2>
+        
+        <input type="number" id="check" placeholder="Enter your score">
+        <button onclick="veiwResult()" id="btn">Check</button>
+        <section id="text">see your result here</section>
+    </main>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+    <div class="box-5"></div>
+    <div class="box-6"></div>
+    <div class="box-7"></div>
+    
+    
+
+    <script>
+        // var score = check.value
+
+        function veiwResult() {
+            // console.log(check.value);
+                // alert(" You pass")
+                var score = check.value;
+                var songfail = new Audio('audio/fail-144746.mp3')
+                var songpass = new Audio('audio/Are-you-playing.mp3')
+                var songAverage = new Audio('audio/sorry.mp3')
+                var songcredit = new Audio('audio/There-Is-God-O.mp3')
+                var songgood = new Audio('audio/I-want-to-be-President.mp3')
+                var songE = new Audio('audio/Carry-Me-Dey-Go.mp3')
+                var songvalid =  new Audio('audio/buzzer-or-wrong-answer-20582 (1).mp3')
+                var songinvalid =  new Audio('audio/wrong-answer-129254.mp3')
+        if (score >0 && score <40) {
+            console.log("Alaye don fail oo");
+            text.innerHTML="Alaye don fail oo"
+            songfail.play()
+        } else if (score >= 40 && score <45) {
+            console.log("pass");
+            text.innerHTML="pass"
+            songpass.play()
+        } else if (score >=45 && score <50) {
+            console.log("Average");
+            text.innerHTML="Average"
+            songAverage.play()
+        } else if (score >=50 && score <60 ) {
+            console.log("credit");
+            text.innerHTML="credit"
+            songcredit.play()
+        } else if (score >= 60 && score <70) {
+            console.log("Good");
+            text.innerHTML="Good"
+            songgood.play()
+        } else if (score >=70 && score <=100){
+            console.log("Excellent");
+            text.innerHTML="Excellent"
+            songE.play()
+        } 
+        else if (check.value > 100) {
+            console.log("Invalid");
+            text.innerHTML="INVALID"
+            text.style.color ='red'
+            songinvalid.play()
+        } 
+     if (check.value =="") {
+        console.log("Enter a valid number");
+            text.innerHTML ="Enter a valid number"
+            text.style.color ='Green'
+            songvalid.play()
+
+        }
+    }
+        // function click() {
+        //     console.log(screen.value);
+        // }
+        // var testScore = prompt("enter your test score")
+        // if (testScore >= 50) {
+        //     alert("You passed")
+        // } else{
+        //     alert("Try agin next year")
+        // }
+    </script>
+</body>
+</html>
